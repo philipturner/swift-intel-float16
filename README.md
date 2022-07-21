@@ -1,6 +1,6 @@
 # Float16 on Intel Macs
 
-This package enables `Float16` from the Swift Standard Library on Intel Macs. The floating-point type is available on Linux and Windows with x86_64, but not on macOS. ARM64 creates a stable function calling convention when compiling with `-enable-library-evolution`, letting Apple officially port `Float16` to iOS and M1 Macs. However, Intel has a unique calling convention that creates ABI instability.
+This package enables `Float16` from the Swift Standard Library on Intel Macs. The floating-point type is available on Linux and Windows with x86_64, but not on macOS. ARM64 creates a stable calling convention when compiling in LLVM, letting Apple officially port `Float16` to iOS and M1 Macs. However, Intel has a unique calling convention that [creates ABI instability](https://github.com/apple/swift/pull/34821).
 
 ## How to Use
 
